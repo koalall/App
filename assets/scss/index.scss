@@ -1,0 +1,141 @@
+@function rem($px) {
+    //$px为需要转换的大小
+    @return $px / 75px * 1rem; // 108为移动端的分辨率
+}
+
+header {
+    padding: rem(34px) rem(28px) rem(30px);
+    height: rem(190px);
+    background: #0293FF;
+
+    .item {
+        display: flex;
+        height: rem(52px);
+        justify-content: space-between;
+        color: #FFF;
+        font-size: rem(38px);
+        font-weight: 700;
+
+        .iconfont {
+            color: #FFF;
+        }
+
+        .item-l {
+            width: 60%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+
+            .iconfont:nth-child(1) {
+                font-size: rem(40px);
+            }
+            .iconfont:last-child {
+                font-size: rem(20px);
+            }
+            span {
+                margin: 0 rem(10px);
+                font-size: rem(36px);
+            }
+        }
+
+        .item-r {
+            display: flex;
+            font-weight: normal;
+
+
+            p:nth-child(1) {
+                font-size: rem(24px);
+            }
+            p:nth-child(2) {
+                font-size: rem(20px);
+            }
+            .iconfont {
+                font-size: rem(48px);
+                margin-left: rem(4px);
+            }
+        }
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: rem(74px);
+        border-radius: rem(4px);
+        margin: rem(14px) 0 rem(15px);
+        background: #FFF;
+        color: #666;
+        font-size: rem(28px);
+
+        .iconfont {
+            color: #999;
+            font-size: 34px;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        a {
+            color: #FFF;
+            font-size: rem(26px);
+        }
+    }
+}
+
+section {
+    .topbar {
+        .topbar1 {
+            >div {
+                display: flex;
+                flex-wrap: wrap;
+
+                a {
+                    display: block;
+                    margin-top: rem(22px);
+                    width: 25%;
+                    text-align: center;
+                    font-size: rem(24px);
+                    color: #666;
+
+                    p {
+                        margin-top: rem(14px);
+                    }
+                }
+            }
+        }
+        .topbar2 {
+            display: flex;
+            justify-content: center;
+            margin: rem(34px) 0 rem(42px) rem(20px);
+
+            span {
+                display: inline-block;
+                width: rem(22px);
+                height: rem(6px);
+                background: #ddd;
+                margin-right: rem(10px);
+
+                &.gray {
+                    background: #aaa;
+                }
+            }
+        }
+    }
+
+    .tiao {
+        height: rem(20px);
+        background: #F3F3F3;
+    }
+
+    .tuijian {
+        h2 {
+            font-size: rem(34px);
+            color: #333;
+            margin: rem(32px) rem(20px) 0;
+            font-weight: 700;
+        }
+    }
+}
