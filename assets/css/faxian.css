@@ -1,0 +1,247 @@
+header {
+  height: 1.17333rem;
+  background: -webkit-linear-gradient(left, #03abff, #0387ff);
+  font-size: 0.48rem;
+  line-height: 1.17333rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+section nav a {
+  display: flex;
+  justify-content: space-between;
+  width: 41.8666666666667%;
+  height: 1.04rem;
+  float: left;
+  padding: 0.64rem 0.4rem;
+  border-right: 0.01333rem solid #f2f2f2;
+  border-bottom: 0.01333rem solid #f2f2f2;
+}
+
+section nav a > div h2 {
+  font-size: 0.45333rem;
+  margin-bottom: 0.26667rem;
+}
+
+section nav a > div p {
+  color: #999;
+  font-size: 0.32rem;
+}
+
+section nav a img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+section nav a:first-child {
+  display: block;
+  height: 4rem;
+  padding: 0.64rem 0.4rem 0 0.4rem;
+  color: #ff9700;
+}
+
+section nav a:first-child h2 {
+  font-size: 0.45333rem;
+  margin-bottom: 0.32rem;
+}
+
+section nav a:first-child p {
+  color: #999;
+  font-size: 0.32rem;
+}
+
+section nav a:first-child img {
+  width: 2rem;
+  margin: 0.24rem 0.69333rem 0;
+}
+
+section nav a:nth-child(2) {
+  color: #f5785d;
+}
+
+section nav a:nth-child(3) {
+  color: #1Ba9e1;
+}
+
+section nav a:nth-child(4) {
+  color: #ed6660;
+}
+
+section nav a:last-child {
+  color: #a2cf26;
+}
+
+section .ad {
+  clear: both;
+  padding: 0.26667rem 0;
+  background: #eee;
+}
+
+section .ad img {
+  width: 100%;
+  height: 2.33333rem;
+}
+
+section section .header {
+  height: 1.12rem;
+  padding: 0.4rem 0.26667rem;
+  text-align: center;
+}
+
+section section .header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 0.48rem;
+}
+
+section section .header h2 div:first-of-type {
+  position: relative;
+  width: 0.61333rem;
+  height: 0.16rem;
+  text-align: center;
+}
+
+section section .header h2 div:first-of-type span:first-child {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  width: 0.53333rem;
+  height: 0;
+  border-top: 0.02667rem solid #333;
+}
+
+section section .header h2 div:first-of-type span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0.53333rem;
+  display: inline-block;
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 50%;
+  background: #333;
+}
+
+section section .header h2 div:last-of-type {
+  position: relative;
+  width: 0.61333rem;
+  height: 0.16rem;
+  text-align: center;
+  margin-left: 0.13333rem;
+}
+
+section section .header h2 div:last-of-type span:first-child {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  width: 0.53333rem;
+  height: 0;
+  border-top: 0.02667rem solid #333;
+}
+
+section section .header h2 div:last-of-type span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 50%;
+  background: #333;
+}
+
+section section .header h2 i {
+  font-size: 0.42667rem;
+  color: #f12c2c;
+  margin-right: 0.13333rem;
+  margin-left: 0.2rem;
+}
+
+section section .header p {
+  color: #999;
+  font-size: 0.32rem;
+  margin-top: 0.21333rem;
+}
+
+section section .section {
+  padding: 0 0.26667rem;
+}
+
+section section .section > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+section section .section > div > div {
+  flex: 1;
+  font-size: 0.29333rem;
+}
+
+section section .section > div > div img {
+  width: 2.96rem;
+  margin-bottom: 0.24rem;
+}
+
+section section .section > div > div p:first-of-type {
+  color: #333;
+  margin-bottom: 0.45333rem;
+}
+
+section section .section > div > div p:last-of-type {
+  color: #f94843;
+}
+
+section section .section > div > div p:last-of-type span {
+  margin-left: 0.16rem;
+  color: #999;
+}
+
+section section .section > a {
+  clear: both;
+  display: block;
+  padding: 0.8rem 0 0.4rem;
+  font-size: 0.34667rem;
+  color: #999;
+  text-align: center;
+}
+
+section section .tiao {
+  padding: 0 0.4rem;
+  height: 0.26667rem;
+  background: #eee;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 1.33333rem;
+  font-size: 0.29333rem;
+  background: #FFF;
+}
+
+footer > a {
+  flex: 1;
+  display: block;
+  color: #aaa;
+  text-align: center;
+}
+
+footer > a .iconfont {
+  font-size: 0.56rem;
+}
+
+footer > a p {
+  margin-top: 0.13333rem;
+}
+
+footer .choose {
+  color: #009FFF;
+}

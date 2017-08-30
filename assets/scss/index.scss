@@ -6,7 +6,7 @@
 header {
     padding: rem(34px) rem(28px) rem(30px);
     height: rem(190px);
-    background: #0293FF;
+    background: -webkit-linear-gradient(left, #03abff, #0387ff);
 
     .item {
         display: flex;
@@ -106,6 +106,7 @@ section {
                 }
             }
         }
+
         .topbar2 {
             display: flex;
             justify-content: center;
@@ -131,11 +132,213 @@ section {
     }
 
     .tuijian {
+
         h2 {
             font-size: rem(34px);
             color: #333;
             margin: rem(32px) rem(20px) 0;
             font-weight: 700;
         }
+
+        >div {
+            display: flex;
+            padding: rem(30px) rem(20px) rem(20px);
+            color: #666;
+            border-bottom: 1px solid #EEE;
+
+            img {
+                margin-right: rem(20px);
+            }
+
+            >div:nth-child(2) {
+                width: 100%;
+
+                >div {
+                    margin-bottom: rem(20px);
+                }
+
+                .item-t {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h3 {
+                        font-size: rem(30px);
+                        color: #333;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            display: block;
+                            border: 1px solid #ddd;
+                            font-size: rem(18px);
+                            color: #999;
+                            margin-left: rem(10px);
+                        }
+                    }
+                }
+
+                .item-shop {
+                    display: flex;
+                    justify-content: space-between;
+
+                    span:first-child {
+                        display: flex;
+                        letter-spacing: rem(-2px);
+
+                        .iconfont {
+                            font-size: rem(22px);
+                            color: #eee;
+                        }
+
+                        p {
+                            margin-left: rem(14px);
+                            letter-spacing: rem(1px);
+                        }
+
+                        .has {
+                            color: #ffcf00;
+                        }
+                    }
+
+                    span:last-child {
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            display: block;
+                            padding: rem(2px) rem(6px);
+                            border-radius: rem(4px);
+                            border: rem(1px) solid #0090FF;
+                            font-size: rem(18px);
+                            line-height: rem(22px);
+                            margin-left: rem(10px);
+
+                            &:first-child {
+                                color: #0090FF;
+                            }
+
+                            &:last-child {
+                                color: #FFF;
+                                background: #0090FF;
+                            }
+                        }
+                    }
+                }
+
+                .item-send {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: rem(20px);
+                    padding-bottom: rem(20px);
+                    border-bottom: 1px dotted #E6E6E6;
+
+                    i {
+                        font-size: rem(16px);
+                        margin: 0 rem(10px);
+                    }
+
+                    span:last-child {
+                        color: #999;
+                    }
+                }
+
+                .item-shou {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: rem(24px);
+                    margin-top: rem(-4px);
+
+                    span:last-child {
+                        color: #999;
+                        font-size: rem(20px);
+
+                        i {
+                            display: inline-block;
+                            transform: rotateZ(0deg);
+                            font-size: rem(20px);
+                        }
+
+                        .iconfont {}
+                    }
+                }
+
+                .item-jian {
+                    font-size: rem(24px);
+                    margin-top: rem(-8px);
+                }
+
+                .item-down {
+                    display: none;
+                    margin-top: rem(-8px);
+
+                    >div {
+                        font-size: rem(24px);
+                        margin-top: rem(12px);
+                    }
+                }
+
+                .i-qian {
+                    display: inline-block;
+                    width: rem(26px);
+                    height: rem(26px);
+                    line-height: rem(26px);
+                    color: #FFF;
+                    margin-right: rem(8px);
+                    text-align: center;
+                }
+
+                .shou {
+                    background: #70BC46;
+                }
+                .jian {
+                    background: #F07373;
+                }
+
+                .zhe {
+                    background: #F07373;
+                }
+                .te {
+                    background: #F1884F;
+                }
+                .fan {
+                    background: #54CE75;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: rem(100px);
+    font-size: rem(22px);
+    background: #FFF;
+
+    >a {
+        flex: 1;
+        display: block;
+        color: #aaa;
+        text-align: center;
+
+        .iconfont {
+            font-size: rem(42px);
+        }
+
+        p {
+            margin-top: rem(10px);
+        }
+    }
+
+    .choose {
+        color: #009FFF;
     }
 }
