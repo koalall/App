@@ -83,7 +83,18 @@ header nav a {
   font-size: 0.34667rem;
 }
 
+section .topbar {
+  width: 100%;
+  overflow: hidden;
+}
+
+section .topbar .topbar1 {
+  display: flex;
+  width: 200%;
+}
+
 section .topbar .topbar1 > div {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -95,6 +106,10 @@ section .topbar .topbar1 > div a {
   text-align: center;
   font-size: 0.32rem;
   color: #666;
+}
+
+section .topbar .topbar1 > div a img {
+  width: 1.2rem;
 }
 
 section .topbar .topbar1 > div a p {
@@ -131,79 +146,80 @@ section .tuijian h2 {
   font-weight: 700;
 }
 
-section .tuijian > div {
+section .tuijian > a {
   display: flex;
   padding: 0.4rem 0.26667rem 0.26667rem;
   color: #666;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 0.01333rem solid #EEE;
 }
 
-section .tuijian > div img {
+section .tuijian > a img {
+  width: 1.73333rem;
   margin-right: 0.26667rem;
 }
 
-section .tuijian > div > div:nth-child(2) {
+section .tuijian > a > div:nth-child(2) {
   width: 100%;
 }
 
-section .tuijian > div > div:nth-child(2) > div {
+section .tuijian > a > div:nth-child(2) > div {
   margin-bottom: 0.26667rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-t {
+section .tuijian > a > div:nth-child(2) .item-t {
   display: flex;
   justify-content: space-between;
 }
 
-section .tuijian > div > div:nth-child(2) .item-t h3 {
+section .tuijian > a > div:nth-child(2) .item-t h3 {
   font-size: 0.4rem;
   color: #333;
   font-weight: 700;
 }
 
-section .tuijian > div > div:nth-child(2) .item-t span {
+section .tuijian > a > div:nth-child(2) .item-t span {
   display: flex;
   align-items: center;
 }
 
-section .tuijian > div > div:nth-child(2) .item-t span i {
+section .tuijian > a > div:nth-child(2) .item-t span i {
   display: block;
-  border: 1px solid #ddd;
+  border: 0.01333rem solid #ddd;
   font-size: 0.24rem;
   color: #999;
   margin-left: 0.13333rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop {
+section .tuijian > a > div:nth-child(2) .item-shop {
   display: flex;
   justify-content: space-between;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop span:first-child {
+section .tuijian > a > div:nth-child(2) .item-shop span:first-child {
   display: flex;
   letter-spacing: -0.02667rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop span:first-child .iconfont {
+section .tuijian > a > div:nth-child(2) .item-shop span:first-child .iconfont {
   font-size: 0.29333rem;
   color: #eee;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop span:first-child p {
+section .tuijian > a > div:nth-child(2) .item-shop span:first-child p {
   margin-left: 0.18667rem;
   letter-spacing: 0.01333rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop span:first-child .has {
+section .tuijian > a > div:nth-child(2) .item-shop span:first-child .has {
   color: #ffcf00;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop span:last-child {
+section .tuijian > a > div:nth-child(2) .item-shop span:last-child {
   display: flex;
   align-items: center;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop span:last-child i {
+section .tuijian > a > div:nth-child(2) .item-shop span:last-child i {
   display: block;
   padding: 0.02667rem 0.08rem;
   border-radius: 0.05333rem;
@@ -213,66 +229,66 @@ section .tuijian > div > div:nth-child(2) .item-shop span:last-child i {
   margin-left: 0.13333rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop span:last-child i:first-child {
+section .tuijian > a > div:nth-child(2) .item-shop span:last-child i:first-child {
   color: #0090FF;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shop span:last-child i:last-child {
+section .tuijian > a > div:nth-child(2) .item-shop span:last-child i:last-child {
   color: #FFF;
   background: #0090FF;
 }
 
-section .tuijian > div > div:nth-child(2) .item-send {
+section .tuijian > a > div:nth-child(2) .item-send {
   display: flex;
   justify-content: space-between;
   font-size: 0.26667rem;
   padding-bottom: 0.26667rem;
-  border-bottom: 1px dotted #E6E6E6;
+  border-bottom: 0.02rem dashed #E6E6E6;
 }
 
-section .tuijian > div > div:nth-child(2) .item-send i {
+section .tuijian > a > div:nth-child(2) .item-send i {
   font-size: 0.21333rem;
   margin: 0 0.13333rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-send span:last-child {
+section .tuijian > a > div:nth-child(2) .item-send span:last-child {
   color: #999;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shou {
+section .tuijian > a > div:nth-child(2) .item-shou {
   display: flex;
   justify-content: space-between;
   font-size: 0.32rem;
   margin-top: -0.05333rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shou span:last-child {
+section .tuijian > a > div:nth-child(2) .item-shou span:last-child {
   color: #999;
   font-size: 0.26667rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-shou span:last-child i {
+section .tuijian > a > div:nth-child(2) .item-shou span:last-child i {
   display: inline-block;
   transform: rotateZ(0deg);
   font-size: 0.26667rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-jian {
+section .tuijian > a > div:nth-child(2) .item-jian {
   font-size: 0.32rem;
   margin-top: -0.10667rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-down {
+section .tuijian > a > div:nth-child(2) .item-down {
   display: none;
   margin-top: -0.10667rem;
 }
 
-section .tuijian > div > div:nth-child(2) .item-down > div {
+section .tuijian > a > div:nth-child(2) .item-down > div {
   font-size: 0.32rem;
   margin-top: 0.16rem;
 }
 
-section .tuijian > div > div:nth-child(2) .i-qian {
+section .tuijian > a > div:nth-child(2) .i-qian {
   display: inline-block;
   width: 0.34667rem;
   height: 0.34667rem;
@@ -282,24 +298,29 @@ section .tuijian > div > div:nth-child(2) .i-qian {
   text-align: center;
 }
 
-section .tuijian > div > div:nth-child(2) .shou {
+section .tuijian > a > div:nth-child(2) .shou {
   background: #70BC46;
 }
 
-section .tuijian > div > div:nth-child(2) .jian {
+section .tuijian > a > div:nth-child(2) .jian {
   background: #F07373;
 }
 
-section .tuijian > div > div:nth-child(2) .zhe {
+section .tuijian > a > div:nth-child(2) .zhe {
   background: #F07373;
 }
 
-section .tuijian > div > div:nth-child(2) .te {
+section .tuijian > a > div:nth-child(2) .te {
   background: #F1884F;
 }
 
-section .tuijian > div > div:nth-child(2) .fan {
+section .tuijian > a > div:nth-child(2) .fan {
   background: #54CE75;
+}
+
+section .di {
+  height: 1.33333rem;
+  background: #eee;
 }
 
 footer {

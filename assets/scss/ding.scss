@@ -1,0 +1,310 @@
+@function rem($px) {
+    //$px为需要转换的大小
+    @return $px / 75px * 1rem; // 108为移动端的分辨率
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: rem(88px);
+    background: -webkit-linear-gradient(left, #03abff, #0387ff);
+    font-size: rem(36px);
+    line-height: rem(88px);
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+section {
+    padding-top: rem(88px);
+    overflow: hidden;
+
+    .header {
+        padding: rem(40px) 0 rem(34px);
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            padding: 0 rem(30px) rem(10px);
+
+            h2 {
+                font-size: rem(30px);
+                color: #333;
+            }
+
+            span {
+                font-size: rem(24px);
+                color: #2395ff;
+            }
+        }
+
+        .item {
+            >div {
+                display: flex;
+                width: 118.8889%;
+
+                >a {
+                    display: flex;
+                    width: 100%;
+                    border-bottom: 1px solid #eee;
+                    padding: rem(30px) rem(30px) 0;
+
+                    img {
+                        width: rem(72px);
+                        height: rem(72px);
+                        margin-right: rem(22px);
+                    }
+
+                    >div:nth-child(2) {
+                        width: 100%;
+
+                        h2 {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: rem(30px);
+                            color: #333;
+                            font-weight: 700;
+                            span:first-child {
+                                text-align: center;
+                            }
+
+                            .iconfont {
+                                font-size: rem(20px);
+                                color: #333;
+                            }
+
+                            span:nth-child(2) {
+                                font-size: rem(26px);
+                                font-weight: normal;
+                            }
+                        }
+
+                        p:first-of-type {
+                            font-size: rem(16px);
+                            color: #a0a0a0;
+                            font-weight: bold;
+                            margin-top: rem(14px);
+                        }
+
+                        p:nth-of-type(2) {
+                            font-size: rem(28px);
+                            color: #666;
+                            margin-top: rem(34px);
+                        }
+
+                        p:nth-of-type(3) {
+                            font-size: rem(24px);
+                            color: #333;
+                            margin: rem(20px) 0 rem(44px);
+                        }
+
+                        >i {
+                            float: right;
+                            display: none;
+                            color: #2495ff;
+                            border: 1px solid #aed8ff;
+                            padding: rem(10px) rem(15px);
+                            margin: rem(-20px) 0 rem(40px);
+                        }
+                    }
+                }
+
+
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 18.8889%;
+                    background: #ff3b30;
+                    font-size: rem(38px);
+                    color: #FFF;
+                }
+            }
+            .hide {
+                display: none;
+            }
+        }
+
+        >p {
+            padding: rem(34px) 0 rem(15px);
+            font-size: rem(28px);
+            color: #666;
+            text-align: center;
+
+            .iconfont {
+                font-size: rem(28px);
+                color: #666;
+                margin-left: rem(10px);
+            }
+        }
+    }
+
+    .section {
+        padding: rem(20px) rem(30px) rem(64px);
+
+        ul {
+            display: flex;
+
+            li {
+                font-size: rem(28px);
+                color: #999;
+                padding: rem(16px) 0;
+                border-bottom: rem(5px) solid transparent;
+                margin-right: rem(66px);
+            }
+
+            .color {
+                color: #333;
+                border-color: #2395ff;
+            }
+        }
+
+        div {
+            text-align: center;
+            h2 {
+                font-size: rem(30px);
+                color: #333;
+                margin: rem(44px) 0 rem(20px);
+            }
+
+            p {
+                font-size: rem(20px);
+                color: #666;
+            }
+
+            &:last-of-type {
+                display: none;
+            }
+        }
+    }
+
+    .like {
+        >h2 {
+            padding: rem(44px) rem(30px) rem(34px);
+            font-size: rem(30px);
+            color: #333;
+            font-weight: 700;
+        }
+
+        >div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 rem(20px);
+
+            >div {
+                width: rem(345px);
+                border: 1px solid #ebebeb;
+                margin-bottom: rem(22px);
+
+                img {
+                    width: 100%;
+                }
+                >div {
+                    padding: 0 rem(26px);
+
+                    h2 {
+                        margin: rem(26px) 0 rem(20px);
+                        font-size: rem(30px);
+                        color: #333;
+                    }
+
+                    p {
+                        font-size: rem(20px);
+                        color: #666;
+
+                        span {
+                            margin-left: rem(16px);
+                        }
+                    }
+
+                    h3 {
+                        padding: rem(26px) 0 rem(14px);
+                        color: #ff5339;
+                        font-size: rem(24px);
+                        border-bottom: 1px dashed #eee;
+
+                        i {
+                            font-size: rem(16px);
+                        }
+
+                        span {
+                            display: inline-block;
+                            border: 1px solid #f88886;
+                            padding: rem(4px) rem(12px) rem(6px) rem(8px);
+                            font-size: rem(16px);
+                            color: #f66d6b;
+                            margin-left: rem(12px);
+                        }
+                    }
+
+                    h4 {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: rem(20px) 0 rem(22px);
+                        font-size: rem(20px);
+                        color: #bbb;
+
+                        .iconfont {
+                            font-size: rem(22px);
+                        }
+
+                        span {
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    >p {
+        font-size: rem(20px);
+        color: #333;
+        padding: rem(10px) 0 rem(30px);
+        text-align: center;
+    }
+
+    .tiao {
+        height: rem(15px);
+        background: #f5f5f5;
+    }
+
+    .di {
+        height: rem(100px);
+        background: #eee;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: rem(100px);
+    font-size: rem(22px);
+    background: #FFF;
+
+    >a {
+        flex: 1;
+        display: block;
+        color: #aaa;
+        text-align: center;
+
+        .iconfont {
+            font-size: rem(42px);
+        }
+
+        p {
+            margin-top: rem(10px);
+        }
+    }
+
+    .choose {
+        color: #009FFF;
+    }
+}
