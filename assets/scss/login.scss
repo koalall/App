@@ -1,0 +1,110 @@
+@function rem($px) {
+    //$px为需要转换的大小
+    @return $px / 75px * 1rem; // 108为移动端的分辨率
+}
+
+// html {
+//     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
+header {
+    padding: rem(80px) 0;
+    text-align: center;
+}
+
+section {
+    width: rem(600px);
+    margin: 0 auto;
+
+    >div {
+        text-align: center;
+        a {
+            display: inline-block;
+            padding-bottom: rem(4px);
+            font-size: rem(28px);
+            font-weight: 700;
+            color: #333;
+            line-height: rem(32px);
+
+
+            &:first-child {
+                margin-right: rem(80px);
+            }
+        }
+
+        .choose {
+            color: #2395ff;
+            border-bottom: rem(4px) solid #2395ff;
+        }
+    }
+
+    >form {
+        margin-top: rem(32px);
+
+        >div {
+            position: relative;
+            width: 100%;
+            height: rem(96px);
+            margin-bottom: rem(32px);
+
+            input {
+                font-size: rem(28px);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                padding-left: rem(20px);
+                border: rem(2px) solid #ddd;
+                border-radius: rem(8px);
+                color: #333;
+            }
+
+            button {
+                position: absolute;
+                top: rem(28px);
+                right: rem(20px);
+                font-size: rem(28px);
+                border: none;
+                outline: none;
+                color: #ccc;
+                background: transparent;
+            }
+        }
+
+        >p {
+            margin-top: rem(-8px);
+            color: #999;
+            font-size: rem(28px);
+            line-height: rem(40px);
+
+            >a {
+                color: #2395ff;
+            }
+        }
+
+        >button {
+            margin-top: rem(60px);
+            width: 100%;
+            height: rem(84px);
+            border-radius: rem(8px);
+            background: #4cd96f;
+            color: #fff;
+            font-size: rem(32px);
+            text-align: center;
+            line-height: rem(84px);
+            outline: none;
+            border: none;
+        }
+
+        &:nth-of-type(2) {
+            display: none;
+        }
+    }
+
+    >a {
+        display: inline-block;
+        margin-top: rem(40px);
+        width: 100%;
+        height: rem(28px);
+        text-align: center;
+        color: #999;
+    }
+}
